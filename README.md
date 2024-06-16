@@ -30,7 +30,6 @@ Liste des logiciels et des versions nécessaires pour faire fonctionner le proje
 
 - [Node.js](https://nodejs.org/) (version 14 ou supérieure)
 - [npm](https://www.npmjs.com/) (version 6 ou supérieure)
-- Autres dépendances...
 
 ## Installation
 
