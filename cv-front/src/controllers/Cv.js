@@ -1,5 +1,6 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
+import Swal from 'sweetalert2';
 import All from './All';
 import viewNav from '../views/nav/index';
 import viewCv1 from '../views/modelsCV/model1/index';
@@ -14,10 +15,8 @@ const Cv = class {
   }
 
   async getDatas(data) {
-    console.log(data);
     try {
       const response = await axios.post('http://localhost:83/DatasCv', data);
-      console.log(response);
       const all = JSON.parse(response.data);
       const final = JSON.parse(all[0].data);
       return final;
@@ -31,10 +30,8 @@ const Cv = class {
       id: this.params.id,
       type: this.params.type
     };
-    // console.log(data);
     const response = await this.getDatas(data);
     this.cv = response;
-    // console.log(this.cv);
 
     const pic = document.querySelector('.cv-pic');
     const firstName = document.querySelector('.first-name');
@@ -207,7 +204,6 @@ const Cv = class {
           showConfirmButton: false,
           timer: 1500
         });
-        console.log(response);
         return response;
       } catch (error) {
         return error;
