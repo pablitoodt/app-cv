@@ -1,0 +1,67 @@
+.my-cv-collection {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-block: 1em;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 10px;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+.cv-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+
+  @media (max-width: 768px) {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.cv-table th:nth-child(2),
+.cv-table td:nth-child(2) {
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+.cv-table th, .cv-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+
+}
+
+.cv-table th {
+  background-color: #DCE3F9;
+  color: #4609E6;
+  font-weight: bold;
+}
+
+.cv-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.cv-table tr:hover {
+  background-color: #ddd;
+}
+
+.cv-table a {
+  color: #252525;
+  text-decoration: none;
+}
+
+.cv-table a:hover {
+  text-decoration: underline;
+}

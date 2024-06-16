@@ -1,0 +1,42 @@
+.filter{
+  display: flex;
+  justify-content: center;
+}
+
+.filter-box {
+  display: flex;
+  min-height: fit-content;
+  max-width: fit-content;
+  background-color: #DCE3F9;
+  padding-block: 0.5em;
+  padding-inline: 1.2em;
+  justify-content: center;
+  border-radius: 25px;
+  margin-block: 1em;
+}
+
+.filter-box a+a {
+  margin-left: 1.2em;
+}
+
+.filter-box a{
+  text-decoration: none;
+  color: #4609E6;
+  transition: 0.3s;
+  font-weight: bolder;
+  background-color: #def84900;
+  border-radius: 25px;
+  padding-block: 0.15em;
+  padding-inline: 0.6em;
+  white-space: nowrap;
+
+  @media (max-width: 576px) {
+    &:nth-last-child(-n+2) {
+      display: none;
+    }
+  }
+}
+
+.filter-box a:hover{
+  background-color: #DDF849;
+}

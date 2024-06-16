@@ -1,0 +1,67 @@
+.home-text-container {
+    width: 60%;
+    height: 20em;
+    background-color: #DCE3F9;
+    border-radius: 34% 66% 59% 41% / 34% 52% 48% 66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-block: 1em;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    animation: waterDrop 4s infinite ease-in-out;
+    text-align: center;
+    padding: 2em;
+    font-size: 1.5em;
+    color: #252525;
+
+    @media (max-width: 768px) {
+        width: 80%;
+        height: 10em;
+        padding: 1em;
+        font-size: 1.2em;
+    }
+
+    @media (max-width: 576px) {
+        width: 90%;
+        border-radius: 10% 90% 90% 10% / 90% 10% 90% 10%;
+        font-size: 1em;
+    }
+}
+
+.text-home-title {
+    font-size: inherit;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.text-home-title::before {
+    content: '</> ';
+    color: #4609E6;
+}
+
+.text-home-title::after {
+    content: ' </>';
+    color: #4609E6;
+}
+
+@keyframes waterDrop {
+    0% {
+        border-radius: 34% 66% 59% 41% / 34% 52% 48% 66%;
+    }
+    20% {
+        border-radius: 36% 64% 57% 43% / 36% 54% 46% 64%;
+    }
+    40% {
+        border-radius: 32% 68% 61% 39% / 32% 50% 50% 68%;
+    }
+    60% {
+        border-radius: 38% 62% 55% 45% / 38% 56% 44% 62%;
+    }
+    80% {
+        border-radius: 34% 66% 59% 41% / 34% 52% 48% 66%;
+    }
+    100% {
+        border-radius: 34% 66% 59% 41% / 34% 52% 48% 66%;
+    }
+}

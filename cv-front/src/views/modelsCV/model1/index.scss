@@ -1,0 +1,220 @@
+* {
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+.cv {
+    height: 877px;
+    width: 620px;
+    border: solid;
+    margin-left: 20px;
+    display: flex;
+    position: relative;
+    background-color: white;
+}
+
+.side-form {
+    min-width: 40%;
+    min-height: 877px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    background-color: white;
+    height: 100%;
+    width: 35%;
+}
+
+.right {
+    height: 100%;
+    width: 65%;
+}
+
+.cv-pic-area {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-pic {
+    width: 55%;
+    margin-block: 14%;
+}
+
+.description-area {
+    margin-left: 15%;
+    height: fit-content;
+    width: 85%;
+    color: #fff;
+}
+
+.categorie-area {
+    margin-bottom: 4%;
+}
+
+.categorie-area p {
+    padding-left: 8%;
+}
+
+.categorie-area h3::before {
+    content: '_ ';
+    color: #DDF849;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+.testtutu {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 10px;
+    right: 1px;
+}
+
+.first-name {
+    margin-top: 12%;
+    margin-left: 8%;
+    line-height: 1;
+    font-weight: 100;
+    font-size: large !important;
+}
+
+.last-name {
+    margin-left: 8%;
+    margin-bottom: 1.5%;
+    line-height: 1.4;
+    font-size: x-large !important;
+}
+
+.look-for {
+    margin-inline: 8%;
+    font-weight: 100;
+    line-height: 1.4;
+    font-size: smaller;
+    margin-bottom: 2%;
+    line-break: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    margin-left: 2%;
+    font-size: 9pt;
+}
+
+.left-hr {
+    margin-bottom: 4%;
+}
+
+.label-cv-form{
+    font-weight: bolder;
+    margin-top: 0.4em;
+    margin-bottom: 0.1em;
+}
+
+.input-cv-form{
+    height: 2em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-inline: 0.5em;
+}
+
+.textarea-cv-form{
+    height: 10em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-inline: 0.5em;
+    padding-block: 0.2em;
+}
+
+.color-cv-form{
+    height: 2em;
+    width: 8em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-inline: 0.5em;
+}
+
+#button-send-cv {
+    text-decoration: none;
+    color: #DDF849;
+    background-color: #4609E6;
+    height: fit-content;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    font-size: small;
+    font-weight: bolder;
+    width: fit-content;
+    margin: auto;
+    margin-block: 0.5em;
+}
+
+
+.right-description-area{
+    margin-inline: 8%;
+    height: fit-content;
+}
+
+.right-categorie-area > div p,
+.right-categorie-area > div p b{
+    font-size: 9pt;
+    line-height: 1.3;
+}
+
+.right-categorie-area h3::after{
+    content: '_';
+    color: #DDF849;
+}
+
+.right-hr{
+    margin-bottom: 2%;
+}
+
+.formation-section{
+    margin-bottom: 2%;
+}
+
+.connecter-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.connecter-div > h2 {
+    font-size: 120%;
+}
+
+.connecter-div > a {
+    color: #252525;
+}
