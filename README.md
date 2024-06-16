@@ -1,6 +1,6 @@
-# Nom du Projet
+# App-cv
 
-Une brève description du projet, ce qu'il fait, et pourquoi il est utile.
+¿La création de CV intéractif ça vous intérésse? 
 
 ## Table des Matières
 
