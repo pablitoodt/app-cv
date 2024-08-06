@@ -8,6 +8,7 @@ export default (datas) => `
           <th>Nom de votre CV</th>
           <th>Versions</th>
           <th>Date de création</th>
+          <th>Date de dernière modification</th>
         </tr>
       </thead>
       <tbody>
@@ -16,6 +17,7 @@ export default (datas) => `
             <td><a href="/listCv?catId=${data.id}">${data.name}</a></td>
             <td>${data.versions} versions</td>
             <td>${data.creation_at}</td>
+            <td></td>
           </tr>
         `).join('') : `
           <tr>

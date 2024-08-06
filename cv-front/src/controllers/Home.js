@@ -24,9 +24,18 @@ const Home = class {
     }
   }
 
+  async getNumbersVersions() {
+    try {
+      const response = await axios.get('http://localhost:83/numbersVersions');
+      return response.data;
+    } catch (error) {
+      return error;
+    }
+  }
+
   async getCatListName() {
     const data = {
-      user_id: parseInt(Cookies.get('user_id'))
+      user_id: parseInt(Cookies.get('user_id')),
     };
     try {
       const response = await axios.post('http://localhost:83/cat', data);
@@ -39,6 +48,7 @@ const Home = class {
   async render() {
     const cvModels = await this.getBackModelsColection();
     const catList = await this.getCatListName();
+    console.log(catList);
     if (this.all.islog() === true) {
       return `
       ${viewNav(this.all.islog(), this.all.getName())}
